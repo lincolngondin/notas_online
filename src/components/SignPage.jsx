@@ -22,7 +22,7 @@ export default function SignPage(props){
 		}
 		else{
 			await addUser(name, senha);
-			props.updateSession({user: 'name'});
+			props.updateSession({user: name});
 			props.autenticar(true);
 		}
 		setEnabledButton(true);
